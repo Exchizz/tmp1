@@ -10,6 +10,7 @@ python:
 
 before_script:
   - docker-compose pull
+  - docker-compose build
   - docker-compose start
   - docker ps -a
   - sleep 30  
