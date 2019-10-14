@@ -20,3 +20,11 @@ script: python ./tests/test.py
 
 after_script:
   - docker-compose down
+
+
+
+notifications:
+  email:
+    recipients:
+      - cdd@sdu.dk
+    on_success: always
