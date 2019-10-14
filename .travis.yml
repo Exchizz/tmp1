@@ -17,7 +17,7 @@ before_script:
 #  - sleep 30  
 
 #script: python ./tests/test.py
-script: python -c "print('ok')"
+script: python -c "print('1ok')"
 
 after_script:
 #  - docker-compose down
