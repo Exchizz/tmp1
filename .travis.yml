@@ -16,7 +16,7 @@ before_script:
   - docker ps -a
   - sleep 30  
 
-script: ./tests/test.py
+script: python ./tests/test.py
 
 after_script:
   - docker-compose down
