@@ -12,7 +12,7 @@ before_script:
   - ls -lah
   - docker-compose pull
   - docker-compose build
-  - docker-compose start
+  - docker-compose up -d 
   - docker ps -a
   - sleep 30  
 
