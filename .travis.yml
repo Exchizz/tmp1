@@ -8,16 +8,13 @@ services:
 python:
   - 3.6
 
-# addons:
-#   sauce_connect: true
-
 before_script:
   - docker-compose pull
   - docker-compose start
   - docker ps -a
   - sleep 30  
 
-script: ./scripts/runtests.sh
+script: ./tests/test.py
 
 after_script:
-  - docker-compose -f docker-compose.travis.yml down
+  - docker-compose down
